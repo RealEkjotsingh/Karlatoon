@@ -1,0 +1,448 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+ h2{
+  font-size: 42px !important;
+  font-weight: 700 !important;
+  color: #1b375c !important;
+ }
+ /* Define the scrollbar styles */
+::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the scrollbar track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: navy; /* Color of the scrollbar thumb */
+  border-radius: 1px 1px 1px 1px; /* Rounded bottom corners, no rounded top */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker color on hover */
+}
+
+
+/* Headstrip */
+.headstrip {
+  background-color: #1b375c;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: start;
+  align-items: center;
+
+  .dropdown-menu {
+    background-color: #1b375c;
+
+    .dropdown-item {
+      color: white;
+    }
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+/* Navbar */
+.nav-item {
+  font-weight: 400 !important;
+  color: black !important;
+}
+
+/* Banner */
+.banner {
+  height: 620px;
+  background: url(assets/img/de705db9637849fa1e0365b8bab1ee3c.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  #jobs {
+    margin-top: 50px !important;
+  }
+
+  .button.findjob {
+    padding: 10px 30px !important;
+  }
+
+  .achievements {
+    display: flex;
+    flex-direction: row;
+    height: 390px;
+    justify-content: center;
+    align-items: center;
+
+    .yrs {
+      color: rgb(27, 55, 92);
+      font-weight: 700 !important;
+    }
+
+    .yrs1 {
+      align-items: center;
+      align-content: center;
+      justify-content: end;
+    }
+
+    .places {
+      color: #1b375c;
+
+      .slider .slick-slide {
+        margin: 0 15px;
+      }
+
+      .slider .slick-slide .slick-list {
+        margin: 0 15px;
+      }
+
+      .slider .slick-prev:before,
+      .slider .slick-next:after {
+        color: white !important;
+        background-color: gray !important;
+      }
+
+      .job-opening {
+        color: #1b375c;
+      }
+
+      .benefits {
+        background-color: white;
+        color: #1b375c;
+        padding: 50px 0;
+
+        .img-container {
+          background: #1b375c !important;
+          height: 44px;
+          width: 44px;
+          padding: 10px;
+
+          .img {
+            height: auto;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+/*Achievements*/
+.achievements{
+  padding: 100px 0px;
+  background-color: #ADD8FF40;
+
+} 
+
+/*  where work  */
+.places{
+  padding: 100px 0;
+.slider{
+  .slick-slide {
+    margin: 0 5px;
+    .slick-list {
+      margin: 0 5px;
+    }
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    color: gray;
+  }
+  .card{
+    margin-right: 30px;
+   box-shadow: 5px 5px 13px 0px #E0E0E080 !important;
+    ;
+  }
+}
+} 
+/* Job Opening */
+.job-opening {
+  padding: 100px 0;
+
+  background-color: #f6f6f6;
+  color: #1b375c;
+  box-shadow: 0px 20px 60px 0px #f1f4f880, -4px -4px 20px 0px #1b375c33 inset;
+
+  .tabs {
+    overflow-x: hidden;
+
+    .btn-container {
+      margin-bottom: 1.5rem;
+      padding: 1.5rem 1rem;
+      display: flex;
+      overflow: auto;
+
+      .tab {
+        font-weight: bold;
+        color: #1b375c;
+        background: #d9d9d90f;
+        border: 1px solid #0000002e;
+        box-shadow: 7px 9px 8px 0px #0e61c26e;
+        min-width: 132px;
+      }
+
+      .active {
+        background: #1c385d !important;
+        color: white;
+      }
+    }
+  }
+
+  .jobs {
+    .jobs-container {
+      display: flex;
+      justify-content: space-evenly;
+
+      .job-card {
+        box-shadow: 0px 20px 60px 0px #f1f4f880, 0px 4px 20px 0px #1b375c33 inset;
+        background: #ffffff;
+        border-radius: 4px;
+        padding: 1.2rem;
+        margin: 5px 5px;
+
+        &:hover {
+          background-color: #1b375c;
+          color: white;
+        }
+
+        .company-grp {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .job-loc {
+          display: flex;
+          align-items: center;
+
+          button {
+            border: none;
+            background: #6969731a;
+            color: gray;
+            border-radius: 5px;
+            margin: 0 3px;
+            padding: 2px 5px;
+            width: 80px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*Benefits*/
+.benefits{
+  padding: 50px 0px;
+}
+
+/*====Highest paying=====*/ 
+.highest{
+  background-color: #ADD8FF40;
+  padding: 100px 0;
+
+  
+  .card{
+    border-radius: 20px;
+  }
+  .card {
+  // Default card styles here
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; // Adding transition for smoother hover effect
+  margin-bottom: 20px; 
+  box-shadow: 0px 20px 60px 0px #F1F4F880;
+
+  &:hover {
+    background-color: #1b375c;
+    color: white;
+    border-color: white; 
+}
+
+  .apply {
+    // Button styles here
+    padding: 5px 20px 0px 20px;
+    border: none;
+    background-color:transparent;
+
+    &:hover {
+      background-color:#1b375c;
+      color: white;
+
+    }
+  }
+}}
+.highest{
+.btn{
+   // Button styles here
+   padding: 1px 8px;
+   border: 2px solid #1b375c;
+   background-color: #1b375c;
+   color: white;
+   transition: background-color 0.3s, color 0.3s; // Adding transition for smoother hover effect
+   &:hover {
+    background-color:white;
+    color: #1b375c;
+
+  }
+}
+}
+
+
+/*Companies/ngo*/
+.companies {
+  padding: 100px 0;
+
+  color: #1b375c !important;
+  .slider {
+    .slick-slide {
+      margin: 0 5px;
+      .slick-list {
+        margin: 0 5px;
+      }
+    }
+    .slick-prev:before,
+    .slick-next:before {
+      color: gray;
+    }
+  }
+}
+
+/*JOB*/
+.job-fair {
+  padding: 100px 0;
+  background-color: #ADD8FF40;
+  .job-card {
+    .intro {
+      .img {
+        // color: $primary-blue;
+        height: 44px;
+        width: 44px;
+      }
+    }
+    .desc {
+      .location {
+        color: gray;
+        img {
+          height: 21px;
+          width: 21px;
+        }
+      }
+      .date {
+        color: gray;
+        img {
+          height: 21px;
+          width: 21px;
+        }
+      }
+      .time {
+        color: gray;
+        img {
+          height: 21px;
+          width: 21px;
+        }
+      }
+    }
+  }
+}
+
+.reviews {
+  padding: 100px 0;
+  background: #f1f2f4bf;
+  .review-container {
+    .review-cards {
+      display: flex;
+      // justify-content: center;
+      .review-card {
+        box-shadow: 0px 20px 60px 0px #f1f4f880;
+        box-shadow: 0px 4px 20px 0px #1b375c33 inset;
+        margin: 5px 5px;
+        .img-dv {
+          display: flex;
+        }
+        .card-footer {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+/* Footer */
+.footer1 {
+  background-color: #1db5be;
+}
+
+.footer2 {
+  background-color: #1b375c;
+  padding: 1.5rem;
+
+  .info {
+    margin-top: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .footnav {
+    color: white;
+    margin-right: 1.5rem;
+    text-decoration: none;
+  }
+
+  .mail,
+  .address {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .stores {
+    display: flex;
+    justify-content: start;
+    padding-left: 0px !important;
+
+    #applestore {
+      margin-right: 30px;
+    }
+  }
+
+  .text-orange {
+    font-size: 24px !important;
+    color: orangered;
+  }
+
+  #weekly {
+    font-size: 12px !important;
+  }
+}
+
+.button3 {
+  background-color: orangered !important;
+  padding: 2px 4px !important;
+  border-color: orangered !important;
+}
+
+.img-container {
+  background: #1b375c !important;
+  height: 44px;
+  width: 44px;
+  padding: 10px;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 992px ) {
+  .footer2{
+    .stores{
+      display: flex !important;
+      justify-content: space-evenly !important;
+    }
+  }}

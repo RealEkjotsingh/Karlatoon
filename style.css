@@ -1,0 +1,386 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 42px !important;
+  font-weight: 700 !important;
+  color: #1b375c !important;
+}
+
+/* Define the scrollbar styles */
+::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+  height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the scrollbar track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: navy; /* Color of the scrollbar thumb */
+  border-radius: 1px 1px 1px 1px; /* Rounded bottom corners, no rounded top */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker color on hover */
+}
+
+/* Headstrip */
+.headstrip {
+  background-color: #1b375c;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: start;
+  align-items: center;
+}
+.headstrip .dropdown-menu {
+  background-color: #1b375c;
+}
+.headstrip .dropdown-menu .dropdown-item {
+  color: white;
+}
+.headstrip img {
+  max-width: 100%;
+}
+
+/* Navbar */
+.nav-item {
+  font-weight: 400 !important;
+  color: black !important;
+}
+
+/* Banner */
+.banner {
+  height: 620px;
+  background: url(assets/img/de705db9637849fa1e0365b8bab1ee3c.jpeg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.banner #jobs {
+  margin-top: 50px !important;
+}
+.banner .button.findjob {
+  padding: 10px 30px !important;
+}
+.banner .achievements {
+  display: flex;
+  flex-direction: row;
+  height: 390px;
+  justify-content: center;
+  align-items: center;
+}
+.banner .achievements .yrs {
+  color: rgb(27, 55, 92);
+  font-weight: 700 !important;
+}
+.banner .achievements .yrs1 {
+  align-items: center;
+  align-content: center;
+  justify-content: end;
+}
+.banner .achievements .places {
+  color: #1b375c;
+}
+.banner .achievements .places .slider .slick-slide {
+  margin: 0 15px;
+}
+.banner .achievements .places .slider .slick-slide .slick-list {
+  margin: 0 15px;
+}
+.banner .achievements .places .slider .slick-prev:before,
+.banner .achievements .places .slider .slick-next:after {
+  color: white !important;
+  background-color: gray !important;
+}
+.banner .achievements .places .job-opening {
+  color: #1b375c;
+}
+.banner .achievements .places .benefits {
+  background-color: white;
+  color: #1b375c;
+  padding: 50px 0;
+}
+.banner .achievements .places .benefits .img-container {
+  background: #1b375c !important;
+  height: 44px;
+  width: 44px;
+  padding: 10px;
+}
+.banner .achievements .places .benefits .img-container .img {
+  height: auto;
+  max-width: 100%;
+}
+
+/*Achievements*/
+.achievements {
+  padding: 100px 0px;
+  background-color: rgba(173, 216, 255, 0.2509803922);
+}
+
+/*  where work  */
+.places {
+  padding: 100px 0;
+}
+.places .slider .slick-slide {
+  margin: 0 5px;
+}
+.places .slider .slick-slide .slick-list {
+  margin: 0 5px;
+}
+.places .slider .slick-prev:before,
+.places .slider .slick-next:before {
+  color: gray;
+}
+.places .slider .card {
+  margin-right: 30px;
+  box-shadow: 5px 5px 13px 0px rgba(224, 224, 224, 0.5019607843) !important;
+}
+
+/* Job Opening */
+.job-opening {
+  padding: 100px 0;
+  background-color: #f6f6f6;
+  color: #1b375c;
+  box-shadow: 0px 20px 60px 0px rgba(241, 244, 248, 0.5019607843), -4px -4px 20px 0px rgba(27, 55, 92, 0.2) inset;
+}
+.job-opening .tabs {
+  overflow-x: hidden;
+}
+.job-opening .tabs .btn-container {
+  margin-bottom: 1.5rem;
+  padding: 1.5rem 1rem;
+  display: flex;
+  overflow: auto;
+}
+.job-opening .tabs .btn-container .tab {
+  font-weight: bold;
+  color: #1b375c;
+  background: rgba(217, 217, 217, 0.0588235294);
+  border: 1px solid rgba(0, 0, 0, 0.1803921569);
+  box-shadow: 7px 9px 8px 0px rgba(14, 97, 194, 0.431372549);
+  min-width: 132px;
+}
+.job-opening .tabs .btn-container .active {
+  background: #1c385d !important;
+  color: white;
+}
+.job-opening .jobs .jobs-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.job-opening .jobs .jobs-container .job-card {
+  box-shadow: 0px 20px 60px 0px rgba(241, 244, 248, 0.5019607843), 0px 4px 20px 0px rgba(27, 55, 92, 0.2) inset;
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 1.2rem;
+  margin: 5px 5px;
+}
+.job-opening .jobs .jobs-container .job-card:hover {
+  background-color: #1b375c;
+  color: white;
+}
+.job-opening .jobs .jobs-container .job-card .company-grp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.job-opening .jobs .jobs-container .job-card .job-loc {
+  display: flex;
+  align-items: center;
+}
+.job-opening .jobs .jobs-container .job-card .job-loc button {
+  border: none;
+  background: rgba(105, 105, 115, 0.1019607843);
+  color: gray;
+  border-radius: 5px;
+  margin: 0 3px;
+  padding: 2px 5px;
+  width: 80px;
+}
+
+/*Benefits*/
+.benefits {
+  padding: 50px 0px;
+}
+
+/*====Highest paying=====*/
+.highest {
+  background-color: rgba(173, 216, 255, 0.2509803922);
+  padding: 100px 0;
+}
+.highest .card {
+  border-radius: 20px;
+}
+.highest .card {
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  margin-bottom: 20px;
+  box-shadow: 0px 20px 60px 0px rgba(241, 244, 248, 0.5019607843);
+}
+.highest .card:hover {
+  background-color: #1b375c;
+  color: white;
+  border-color: white;
+}
+.highest .card .apply {
+  padding: 5px 20px 0px 20px;
+  border: none;
+  background-color: transparent;
+}
+.highest .card .apply:hover {
+  background-color: #1b375c;
+  color: white;
+}
+
+.highest .btn {
+  padding: 1px 8px;
+  border: 2px solid #1b375c;
+  background-color: #1b375c;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+.highest .btn:hover {
+  background-color: white;
+  color: #1b375c;
+}
+
+/*Companies/ngo*/
+.companies {
+  padding: 100px 0;
+  color: #1b375c !important;
+}
+.companies .slider .slick-slide {
+  margin: 0 5px;
+}
+.companies .slider .slick-slide .slick-list {
+  margin: 0 5px;
+}
+.companies .slider .slick-prev:before,
+.companies .slider .slick-next:before {
+  color: gray;
+}
+
+/*JOB*/
+.job-fair {
+  padding: 100px 0;
+  background-color: rgba(173, 216, 255, 0.2509803922);
+}
+.job-fair .job-card .intro .img {
+  height: 44px;
+  width: 44px;
+}
+.job-fair .job-card .desc .location {
+  color: gray;
+}
+.job-fair .job-card .desc .location img {
+  height: 21px;
+  width: 21px;
+}
+.job-fair .job-card .desc .date {
+  color: gray;
+}
+.job-fair .job-card .desc .date img {
+  height: 21px;
+  width: 21px;
+}
+.job-fair .job-card .desc .time {
+  color: gray;
+}
+.job-fair .job-card .desc .time img {
+  height: 21px;
+  width: 21px;
+}
+
+.reviews {
+  padding: 100px 0;
+  background: rgba(241, 242, 244, 0.7490196078);
+}
+.reviews .review-container .review-cards {
+  display: flex;
+}
+.reviews .review-container .review-cards .review-card {
+  box-shadow: 0px 20px 60px 0px rgba(241, 244, 248, 0.5019607843);
+  box-shadow: 0px 4px 20px 0px rgba(27, 55, 92, 0.2) inset;
+  margin: 5px 5px;
+}
+.reviews .review-container .review-cards .review-card .img-dv {
+  display: flex;
+}
+.reviews .review-container .review-cards .review-card .card-footer {
+  display: flex;
+}
+
+/* Footer */
+.footer1 {
+  background-color: #1db5be;
+}
+
+.footer2 {
+  background-color: #1b375c;
+  padding: 1.5rem;
+}
+.footer2 .info {
+  margin-top: 2rem;
+  margin-bottom: 10px;
+}
+.footer2 .footnav {
+  color: white;
+  margin-right: 1.5rem;
+  text-decoration: none;
+}
+.footer2 .mail,
+.footer2 .address {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.footer2 .stores {
+  display: flex;
+  justify-content: start;
+  padding-left: 0px !important;
+}
+.footer2 .stores #applestore {
+  margin-right: 30px;
+}
+.footer2 .text-orange {
+  font-size: 24px !important;
+  color: orangered;
+}
+.footer2 #weekly {
+  font-size: 12px !important;
+}
+
+.button3 {
+  background-color: orangered !important;
+  padding: 2px 4px !important;
+  border-color: orangered !important;
+}
+
+.img-container {
+  background: #1b375c !important;
+  height: 44px;
+  width: 44px;
+  padding: 10px;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 992px) {
+  .footer2 .stores {
+    display: flex !important;
+    justify-content: space-evenly !important;
+  }
+}/*# sourceMappingURL=style.css.map */
